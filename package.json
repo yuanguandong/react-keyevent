@@ -1,0 +1,28 @@
+{
+  "name": "react-keyevent",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "dev": "set NODE_ENV=developemnt&& rollup -c rollup.config.js -w",
+    "build": "rm -rf lib && set NODE_ENV=production&& rollup -c rollup.config.js"
+  },
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.13",
+    "@typescript-eslint/parser": "^4.28.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
