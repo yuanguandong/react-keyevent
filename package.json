@@ -1,6 +1,6 @@
 {
   "name": "react-keyevent",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -24,5 +24,6 @@
     "rollup-plugin-uglify": "^6.0.4",
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
-  }
+  },
+  "files":["lib"]
 }

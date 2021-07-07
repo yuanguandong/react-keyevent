@@ -1,3 +1,2 @@
-import React from 'react';
-declare const withKeyEvent: (bindKeys: any, needFouce?: boolean | undefined) => (WrapedComponent: React.ReactNode) => React.ReactNode;
+declare const withKeyEvent: (bindKeys: any, needFouce?: boolean | undefined) => any;
 export default withKeyEvent;
