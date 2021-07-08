@@ -1,4 +1,4 @@
-const KeyCodes: any = {
+const KeyCodes:any = {
   /**
    * MAC_ENTER
    */

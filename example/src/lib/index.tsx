@@ -2,32 +2,38 @@ import React, { useLayoutEffect, useRef } from "react";
 import { validPropName } from "./utils";
 const KEY_EVENT = "keydown";
 
-const KeyEvent = (props: any) => {
+interface KeyEventProps {
+  events: { [key: string]: (p: any) => void };
+  needFocusing?: boolean;
+  [key: string]: any;
+}
+
+const KeyEvent = (props: KeyEventProps) => {
   const {
     children: WrapedComponent,
     needFocusing,
-    bindKeys,
+    events,
     className,
     style,
     ...restProps
   } = props;
 
   const ref = useRef<any>(null);
-  console.log("WrapedComponent", WrapedComponent);
+
   useLayoutEffect(() => {
     const dom = ref.current || window;
     const callback: any = (ev: KeyboardEvent) => {
-      Object.keys(bindKeys)
+      Object.keys(events)
         .filter((keyName) => validPropName(ev, keyName))
         .forEach((key) => {
-          bindKeys[key](ev);
+          events[key](ev);
         });
     };
     if (dom) dom.addEventListener(KEY_EVENT, callback);
     return () => {
       if (dom) dom.removeEventListener(KEY_EVENT, callback);
     };
-  }, [bindKeys]);
+  }, [events]);
 
   return (
     <>

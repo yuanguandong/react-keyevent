@@ -1,6 +1,5 @@
 import KeyCodes from './keyCodes';
 
-
 export const keyReg = /^on(Alt|Ctrl|Meta|Shift){0,4}([A-Z][a-z]*)+$/;
 
 export const splitKey = (str: string): Array<string> | null => {
