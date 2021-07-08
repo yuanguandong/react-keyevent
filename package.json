@@ -8,7 +8,8 @@
   "module": "lib/index.esm.js",
   "scripts": {
     "dev": "set NODE_ENV=developemnt&& rollup -c rollup.config.js -w",
-    "build": "rm -rf lib && set NODE_ENV=production&& rollup -c rollup.config.js"
+    "build": "rm -rf lib && set NODE_ENV=production&& rollup -c rollup.config.js",
+    "build:doc":"cd example && umi build"
   },
   "types": "lib/index.d.ts",
   "dependencies": {
