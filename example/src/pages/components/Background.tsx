@@ -1,3 +1,4 @@
+
 export default () => {
   function randomNum(minNum:number, maxNum:number) {
     switch (arguments.length) {
@@ -22,6 +23,7 @@ export default () => {
 
   return (
     <div className="background">
+      <a className="github" href="https://github.com/yuanguandong/react-keyevent" target="_blank"></a>
       <div className="symbol" style={getPosition()}>
         ○
       </div>

@@ -1,6 +1,6 @@
 
-import Keyevent from "@/lib";
 import React, { useState } from "react";
+import Keyevent from "react-keyevent";
 
 const RightSide = (props: any) => {
   const { collapsed } = props;

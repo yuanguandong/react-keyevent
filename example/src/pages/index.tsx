@@ -1,7 +1,7 @@
 import Logo from '@/assets/logo.png';
-import Keyevent from "@/lib";
 import React, { useState } from "react";
-import { Background, Code, LeftSide, RightSide, TopSide } from './components';
+import Keyevent from "react-keyevent";
+import { Background, Code, Footer, LeftSide, RightSide, TopSide } from './components';
 import "./index.less";
 import Intro from './intro';
 
@@ -36,6 +36,7 @@ const Index: React.FunctionComponent<IProps> = () => {
         </div>
         <Code/>
       </div>
+      <Footer/>
     </Keyevent>
   );
 };

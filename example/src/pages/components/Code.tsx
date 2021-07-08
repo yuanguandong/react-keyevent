@@ -18,8 +18,8 @@ export default () => (
 );
 
 
-const str = `import Keyevent from "@/lib";
-import React, { useState } from "react";
+const str = `import React, { useState } from "react";
+import Keyevent from "react-keyevent";
 
 const TopSide = () => {
   const [count, setCount] = useState(0);
