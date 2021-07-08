@@ -1,12 +1,19 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { validPropName } from './utils';
+import { validPropName } from "./utils";
 const KEY_EVENT = "keydown";
 
-const WrapComp = (props:any) => {
-  const {WrapedComponent,bindKeys,needFouce} = props
+const KeyEvent = (props: any) => {
+  const {
+    children: WrapedComponent,
+    needFocusing,
+    bindKeys,
+    className,
+    style,
+    ...restProps
+  } = props;
 
   const ref = useRef<any>(null);
-
+  console.log("WrapedComponent", WrapedComponent);
   useLayoutEffect(() => {
     const dom = ref.current || window;
     const callback: any = (ev: KeyboardEvent) => {
@@ -24,22 +31,17 @@ const WrapComp = (props:any) => {
 
   return (
     <>
-      {needFouce ? (
-        <div ref={ref} tabIndex={-1}>
-          <WrapedComponent/>
-        </div>
-      ) : (
-        <WrapedComponent/>
-      )}
+      <div
+        ref={needFocusing ? ref : null}
+        tabIndex={-1}
+        className={className}
+        style={style}
+        {...restProps}
+      >
+        {WrapedComponent}
+      </div>
     </>
   );
 };
 
-const withKeyEvent = (bindKeys: any, needFouce?: boolean): any => {
-  return (WrapedComponent:any)=>{
-    if (!bindKeys) return WrapedComponent;
-    return WrapComp.bind(null,{WrapedComponent,bindKeys, needFouce})
-  }
-};
-
-export default withKeyEvent;
+export default KeyEvent;
