@@ -3,7 +3,7 @@ import { validPropName } from "./utils";
 const KEY_EVENT = "keydown";
 
 interface KeyEventProps {
-  events: { [key: string]: (p: any) => void };
+  events: { [key: string]: (e: KeyboardEvent) => void };
   needFocusing?: boolean;
   [key: string]: any;
 }
