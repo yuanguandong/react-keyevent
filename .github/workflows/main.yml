@@ -31,10 +31,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: build:doc
-        run: npm run build
+        run: cd example && npm run build
       # 部署到github pages
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./example/docs
+          publish_dir: ./docs

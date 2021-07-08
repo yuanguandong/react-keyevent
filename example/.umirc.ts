@@ -9,5 +9,5 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
   ],
   fastRefresh: {},
-  outputPath:'docs'
+  outputPath:'../docs'
 });
