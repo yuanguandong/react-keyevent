@@ -1,6 +1,6 @@
 interface KeyEventProps {
     events: {
-        [key: string]: (p: any) => void;
+        [key: string]: (e: KeyboardEvent) => void;
     };
     needFocusing?: boolean;
     [key: string]: any;
