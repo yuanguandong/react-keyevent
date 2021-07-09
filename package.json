@@ -1,6 +1,6 @@
 {
   "name": "react-keyevent",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "An easy-to-use keyboard event react component, Package size less than 3kb. 非常容易使用的一个键盘事件监听组件，可实现各种自定义快捷键功能，只有不到3kb",
   "keywords": [
     "react",
@@ -17,6 +17,11 @@
     "键盘事件监听",
     "快捷键"
   ],
+  "homepage":"https://yuanguandong.github.io/react-keyevent/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuanguandong/react-keyevent"
+  },
   "author": "yuanguandong",
   "license": "MIT",
   "main": "lib/index.js",
