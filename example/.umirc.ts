@@ -1,6 +1,9 @@
 import { defineConfig } from 'umi';
 
+
 export default defineConfig({
+  publicPath: '/react-keyevent/',
+  base: '/react-keyevent/',
   nodeModulesTransform: {
     type: 'none',
   },
