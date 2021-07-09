@@ -1,9 +1,12 @@
 import { defineConfig } from 'umi';
 
+let { BASE } = process.env;
+
+console.log(BASE)
 
 export default defineConfig({
-  publicPath: '/react-keyevent/',
-  base: '/react-keyevent/',
+  publicPath: BASE,
+  base: BASE,
   nodeModulesTransform: {
     type: 'none',
   },
