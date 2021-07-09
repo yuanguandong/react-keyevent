@@ -43,7 +43,7 @@ const Index: React.FunctionComponent<IProps> = () => {
         </div>
         
         <Title level={2}>Easy To Use</Title>
-        <Paragraph>You can very easily integrate a certain panel to enable keyboard shortcuts, you can view this <Link href="https://github.com/yuanguandong/react-keyevent/tree/master/example" target="_blank">Demo</Link></Paragraph>
+        <Paragraph>You can very easily integrate a certain panel to enable keyboard shortcuts, you can <Link href="https://github.com/yuanguandong/react-keyevent/tree/master/example" target="_blank">click here</Link> to view whole demo</Paragraph>
         
         
         <Code />
