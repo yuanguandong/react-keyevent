@@ -15,5 +15,5 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
   ],
   fastRefresh: {},
-  outputPath:'../docs'
+  outputPath:BASE==='/' ? '../netlify': '../docs' 
 });
