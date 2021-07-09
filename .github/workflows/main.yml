@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install umi
-        run: cd example && npm i umi -g
+        run: cd example && sudo npm i umi -g
 
       - name: install other
         run: cd example && npm i
