@@ -4,6 +4,14 @@
 
 ![repository-open-graph-template副本](https://user-images.githubusercontent.com/13197560/125153789-c44b4080-e188-11eb-829e-307a738ad92b.png)
 
+
+### Info
+[![npm version](https://badge.fury.io/js/react-keyevent.svg)](#) [![npm version](https://img.shields.io/badge/react-%3E16-green)](#)[![npm version](	https://img.shields.io/github/issues/yuanguandong/react-keyevent)](#) [![npm version](	https://img.shields.io/github/forks/yuanguandong/react-keyevent)](#) [![npm version](https://img.shields.io/github/license/yuanguandong/react-keyevent)](#) 
+[![npm version](	https://img.shields.io/github/stars/yuanguandong/react-keyevent)](#)
+
+
+
+
 ### Live demo
 https://react-keyevent.netlify.app/ 
 
