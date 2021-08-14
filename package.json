@@ -1,6 +1,6 @@
 {
   "name": "react-keyevent",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "An easy-to-use keyboard event react component, Package size less than 3kb. 非常容易使用的一个键盘事件监听组件，可实现各种自定义快捷键功能，只有不到3kb",
   "keywords": [
     "react",
@@ -31,10 +31,8 @@
     "build": "rm -rf lib && set NODE_ENV=production && rollup -c rollup.config.js"
   },
   "types": "lib/index.d.ts",
-  "dependencies": {
-    "react": "^17.0.2"
-  },
   "devDependencies": {
+    "react": "^17.0.2",
     "@types/react": "^17.0.13",
     "@typescript-eslint/parser": "^4.28.2",
     "rollup-plugin-commonjs": "^10.1.0",

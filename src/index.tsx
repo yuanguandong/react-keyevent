@@ -26,6 +26,8 @@ const KeyEvent = (props: KeyEventProps) => {
       Object.keys(events)
         .filter((keyName) => validPropName(ev, keyName))
         .forEach((key) => {
+          ev.stopPropagation();
+          ev.preventDefault();
           events[key](ev);
         });
     };
