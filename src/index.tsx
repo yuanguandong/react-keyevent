@@ -23,13 +23,20 @@ const KeyEvent = (props: KeyEventProps) => {
   useLayoutEffect(() => {
     const dom = ref.current || window;
     const callback: any = (ev: KeyboardEvent) => {
-      Object.keys(events)
-        .filter((keyName) => validPropName(ev, keyName))
-        .forEach((key) => {
-          ev.stopPropagation();
-          ev.preventDefault();
-          events[key](ev);
-        });
+      const validEvents = Object.keys(events).filter((keyName) =>
+        validPropName(ev, keyName)
+      );
+      let finalKey = "";
+      validEvents.forEach((key) => {
+        ev.stopPropagation();
+        ev.preventDefault();
+        if (key.length > finalKey.length) {
+          finalKey = key;
+        }
+      });
+      if (finalKey) {
+        events[finalKey](ev);
+      }
     };
     if (dom) dom.addEventListener(KEY_EVENT, callback);
     return () => {

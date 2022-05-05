@@ -18,9 +18,12 @@ interface IProps {}
 
 const Index: React.FunctionComponent<IProps> = () => {
   const [collapsed, setCollapsed] = useState(false);
+  
   const onCtrlB = () => {
+    console.log('onCtrlB')
     setCollapsed(!collapsed);
   };
+
   return (
     <>
       <Helmet>
@@ -32,7 +35,7 @@ const Index: React.FunctionComponent<IProps> = () => {
       <Keyevent
         className="App"
         events={{
-          onCtrlB,
+          onCtrlB
         }}
       >
         <Background />

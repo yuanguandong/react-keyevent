@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "start": "umi dev",
-    "build:netlify":"BASE=/ umi build",
-    "build:doc":"BASE=/react-keyevent/ umi build",
+    "build:netlify": "BASE=/ umi build",
+    "build:doc": "BASE=/react-keyevent/ umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
@@ -21,11 +21,12 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-layout": "^6.5.0",
     "@umijs/preset-react": "1.x",
+    "antd": "^4.20.2",
     "classnames": "^2.3.1",
-    "react-keyboard": "^1.0.7",
-    "react-keyevent": "^1.0.4",
+    "react-keyevent": "file:../",
     "react-syntax-highlighter": "^15.4.3",
     "umi": "^3.5.2"
   },

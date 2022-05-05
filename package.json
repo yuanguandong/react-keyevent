@@ -17,7 +17,7 @@
     "键盘事件监听",
     "快捷键"
   ],
-  "homepage":"https://yuanguandong.github.io/react-keyevent/",
+  "homepage": "https://yuanguandong.github.io/react-keyevent/",
   "repository": {
     "type": "git",
     "url": "https://github.com/yuanguandong/react-keyevent"
@@ -32,9 +32,10 @@
   },
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "react": "^17.0.2",
     "@types/react": "^17.0.13",
     "@typescript-eslint/parser": "^4.28.2",
+    "react": "^17.0.2",
+    "rollup": "^2.72.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -43,5 +44,7 @@
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
   },
-  "files":["lib"]
+  "files": [
+    "lib"
+  ]
 }

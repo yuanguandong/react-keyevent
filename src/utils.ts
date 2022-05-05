@@ -1,4 +1,4 @@
-import KeyCodes from './keyCodes';
+import KeyCodes from "./keyCodes";
 
 export const keyReg = /^on(Alt|Ctrl|Meta|Shift){0,4}([A-Z][a-z]*)+$/;
 
@@ -14,6 +14,7 @@ export const isSpecialKey = (key: string) => {
 export const validatKey = (e: any, ename: string) => {
   // check、split
   const keys = splitKey(ename);
+  // console.log('keys',keys)
   if (!keys) return;
   for (let index = 0; index < keys.length; index++) {
     const key: string = keys[index];
@@ -28,11 +29,9 @@ export const validatKey = (e: any, ename: string) => {
   return true;
 };
 
-
 export const validPropName = (e: KeyboardEvent, keyName: string) => {
   if (keyReg.test(keyName) && validatKey(e, keyName)) {
     return true;
   }
   return false;
 };
-
