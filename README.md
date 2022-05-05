@@ -15,6 +15,11 @@ https://react-keyevent.netlify.app/
 
 https://yuanguandong.github.io/react-keyevent/
 
+## Live code
+
+[![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-keyevent-8ny11s?file=/src/App.tsx)
+
+
 ### Install
 ```bash
 npm i react-keyevent -S
