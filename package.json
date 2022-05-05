@@ -1,6 +1,6 @@
 {
   "name": "react-keyevent",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "An easy-to-use keyboard event react component, Package size less than 3kb. 非常容易使用的一个键盘事件监听组件，可实现各种自定义快捷键功能，只有不到3kb",
   "keywords": [
     "react",
